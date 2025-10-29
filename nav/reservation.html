@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <base href="../">
+
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/reservation.css">
+
+    
+
+    <link rel="icon" type="image/png" href="images/logo-favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <div id="header" ></div>
+
+    <div class="home-page">
+        <div class="hero-menu">
+            <h1>RESERVATION</h1>
+        </div>
+
+    </div>
+
+    <section class="reservation-section">
+        <div class="reservation-table">
+            <h3>Reservation</h3>
+            <h1>BOOK TABLE</h1>
+
+            <div class="reservForm">
+                <form action="https:/formsubmit.co/adelekedamilola38@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <div class="form-group">
+                        <label for="">Date</label>
+                        <input type="date" name="date" id="#" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" name="name" placeholder="Name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Time</label>
+                        <select name="time" id="" class="form-control" required>
+                            <option value="9:00">9:00</option>
+                            <option value="9:30">9:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">People</label>
+                        <select name="people" id="" class="form-control" required>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Person</option>
+                            <option value="3">3 Person</option>
+                            <option value="4">4 Person</option>
+                            <option value="10">Family Size</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Phone</label>
+                        <input type="tel" name="phone" placeholder="Enter Phone Number" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" name="email" placeholder="Enter Email Address" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">BOOK TABLE</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="booking-text">
+            <div class="text-column">
+                <h2>Reserve by Phone</h2>
+                <p>Donec quis euismod purus. Donec feugiat ligula rhoncus, varius nisl sed, tincidunt lectus. Nulla vulputate, lectus vel volutpat efficitur, orci lacus sodales sem, sit amet quam: <span>(001) 345 6889</span></p>
+            </div>
+
+            <div class="text-column">
+                <h2>for event booking</h2>
+                <p>Donec feugiat ligula rhoncus: <span>(001) 345 6889</span>, varius nisl sed, tinci-dunt lectus sodales sem.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <div id="footer"></div>
+
+    
+        
+
+    
+
+    <script src="js/main.js" defer></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,  // how long the animation lasts
+            once: true,      // only animate once
+        });
+    </script>
+
+</body>
+</html>
