@@ -7,7 +7,7 @@ html, body {
 }
 
 .home-page {
-    background-image: url('../images/closeup-shot-pink-rose-with-blurred-tables.jpg');
+    background-image: url('https://res.cloudinary.com/dedz0kba0/image/upload/v1761742939/delicious-pizza-indoors_oap1ks.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

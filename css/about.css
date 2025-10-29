@@ -8,7 +8,7 @@ html, body {
 
 
 .home-page {
-    background-image: url('../images/meatballs-plate-garnished-with-tomato-sauce-grated-parmesan-parsley-served-with-red-wine.jpg');
+    background-image: url('https://res.cloudinary.com/dedz0kba0/image/upload/v1761742996/nick-hillier-xBXF9pr6LQo-unsplash_llsnfv.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@ html, body {
 .video-bg {
     position: absolute;
     inset: 0;
-    background: url('../images/oliver-guhr-EjHiN2KxTO4-unsplash.jpg');
+    background: url('https://res.cloudinary.com/dedz0kba0/image/upload/v1761742980/oliver-guhr-EjHiN2KxTO4-unsplash_dhkvr4.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: repeat;

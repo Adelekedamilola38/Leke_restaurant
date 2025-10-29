@@ -211,9 +211,9 @@ const bg2 = document.getElementById('eventBg2');
 let currentBg = 1;
 
 const bgImages = [
-  "images/restaurant-interior.jpg",
-  "images/close-up-seafood-spaghetti-with-mussels-shrimp-tomato-sauce-parsley.jpg",
-  "images/front-view-pasta-with-minced-meat-brown-floor.jpg"
+  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761743056/restaurant-with-green-wall-wooden-table-with-row-tables-planter-with-plant-background_qoyzv6.jpg",
+  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761742998/plate-with-bread-fried-egg-avocado_loqhmp.jpg",
+  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761743070/pasta-with-chicken-tomato-sauce-grated-cheese_rnovca.jpg"
 ]
 
 let index = Array.from(cards).findIndex(c => c.classList.contains('active'));
