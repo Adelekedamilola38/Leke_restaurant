@@ -5,9 +5,9 @@ const nextBtnHome = document.getElementById('nextBtnHome');
 const bars = document.querySelectorAll('.bar-home');
 
 const backgroundImages = [
-  "images/side-view-penne-pasta-with-tomato-sauce-greens-plate.jpg",
-  "images/close-up-seafood-spaghetti-with-mussels-shrimp-tomato-sauce-parsley.jpg",
-  "images/front-view-pasta-with-minced-meat-brown-floor.jpg"
+  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761741501/side-view-penne-pasta-with-tomato-sauce-greens-plate_q56vcw.jpg",
+  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761741555/spaghetti-seafood_tszi8f.jpg",
+  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761741471/pasta-with-chicken-tomato-sauce-grated-cheese_klxscu.jpg"
 ];
 
 let indexA = 0;
