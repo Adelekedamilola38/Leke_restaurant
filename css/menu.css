@@ -1,0 +1,377 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #f1f1f1;
+    font-style: 'Montserrat';
+    
+}
+
+
+.home-page {
+    background-image: url('../images/african-american-chef-adding-fresh-herbs-leaves-plated-dish.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-blend-mode: overlay;
+    z-index: 0;
+    height: 90vh;
+
+}
+
+.home-page::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+
+}
+
+.hero-menu {
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-menu h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+
+.menu-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "Starters Main"
+    "Drinks Desserts";
+    gap: 40px;
+    max-width: 1153px;
+    margin: 0 auto;
+    z-index: 5;
+    padding: 60px;
+}
+
+.Starters {
+    height: 200px;
+}
+
+.Main {
+    height: 700px;
+}
+
+.Drinks {
+    height: 100px;
+    transform: translateY(-280px);
+}
+
+.Desserts {
+    height: 100px;
+    transform: translateY(-250p);
+}
+
+.menu-title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+}
+
+.menu-item {
+    margin-bottom: 30px;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.item-name {
+    padding-right: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.item-name a {
+    text-decoration: none;
+    color: #222;
+}
+
+.item-name a:hover {
+    color: #FA812F;
+}
+.item-price {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.dots {
+    flex: 2;
+    border-bottom: 3px dotted #ddd;
+    margin: 0 auto;
+    height: 1px;
+    margin-top: 10px;
+    color: #222;
+}
+
+.item-desc {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+    margin-left: 2px;
+
+}
+
+
+.special-signup {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f2f2f2;
+}
+
+.special-signup .row {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.special-signup h3 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #222;
+    white-space: nowrap;
+    font-weight: 600;
+    flex: 0 0 auto;
+    transform: translateY(-9px);
+    font-family: 'Montserrat';
+}
+
+.signup-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 0 0 auto;
+}
+
+.input-group {
+    position: relative;
+    display: inline-block;
+}
+
+.input-group input[type="email"] {
+    padding: 14px 46px 14px 18px;
+    width: 280px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #FA812F;
+    box-shadow: none;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+}
+
+.signup-form button {
+    padding: 12px 34px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.signup-form button:hover {
+    background: #FA812F;
+}
+
+.drinks-dinner {
+    text-align: center;
+    background: #fff;
+}
+
+.bg-image {
+    background-image: url('../images/meatballs-plate-garnished-with-tomato-sauce-grated-parmesan-parsley-served-with-red-wine.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    background-blend-mode: overlay;
+    z-index: 0;
+}
+.bg-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+
+.bg-image h2 {
+    font-size: 55px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    z-index: 3;
+    color: #fff;
+}
+
+.bg-image2 {
+    background-image: url('../images/pasta-with-chicken-tomato-sauce-grated-cheese.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    background-blend-mode: overlay;
+    z-index: 0;
+}
+.bg-image2::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+
+.bg-image2 h2 {
+    font-size: 55px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    z-index: 3;
+    color: #fff;
+}
+
+.grid-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 45px;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.drinks-grid {
+    display: block;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.drinks-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    z-index: 5;
+    margin-top: 40px;
+}
+
+.drinks-img {
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.drinks-img img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
+
+.drinks-img img:hover {
+    transform: scale(1.2);
+}
+
+.drinks-display {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+}
+
+.drinks-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+.drinks-name a {
+    text-decoration: none;
+    color: #555;
+    font-weight: lighter;
+    font-family: 'Montserrat';
+}
+
+.drinks-name a:hover {
+    color: #FA812F;
+}
+
+.short-info {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #999;
+    font-weight: 200;
+    font-family: 'monospace';
+}
+
+.drinks-price {
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 10px;
+    color: #444;
+}
+

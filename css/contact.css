@@ -1,0 +1,206 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #f1f1f1;
+    font-style: 'Montserrat';
+    
+}
+
+
+.home-page {
+    background-image: url('../images/ambitious-studio-rick-barrett-9n93X-uCD-E-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-blend-mode: overlay;
+    z-index: 0;
+    height: 85vh;
+
+}
+
+.home-page::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+
+}
+
+.hero-menu {
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-menu h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+
+
+.contact-map {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-container {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.map-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #FA812F;
+    border: 2px solid #FA812F;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 15px;
+}
+
+.map-label h3 {
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.map-label h5 {
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+.contact-form-section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 90px 0;
+}
+
+.contact-form-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.contact-form-section h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #FA812F;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+}
+
+.contact-form-section p {
+    margin-bottom: 50px;
+    color: #666;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "name email phone"
+    "message message message"
+    "- btn -";
+}
+
+.message {
+    grid-area: message;
+    grid-column: 1 / span 3;
+}
+
+.btn {
+    grid-column: 2;
+}
+
+
+form .form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    justify-content: start;
+    font-size: 18px;
+    font-family: "Montserrat";
+    margin-bottom: 10px;
+    color: #444;
+}
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    border-radius: 8px;
+}
+
+form textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    border-radius: 8px;
+    margin-bottom: -15px;
+}
+
+form input:focus, 
+form textarea:focus {
+    outline: none;
+    border-color: #FA812F;
+}
+
+form button {
+    background: #000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 3px;
+    margin: 20px auto 10px;
+    padding: 12px 24px;
+}
+
+form button:hover {
+    background: #FA812F;
+}
+
+#form-status {
+    margin-top: 15px;
+    font-weight: 500;
+}

@@ -1,0 +1,543 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #f1f1f1;
+    font-style: 'Montserrat';
+    
+}
+
+
+.home-page {
+    background-image: url('../images/meatballs-plate-garnished-with-tomato-sauce-grated-parmesan-parsley-served-with-red-wine.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-blend-mode: overlay;
+    z-index: 0;
+    height: 90vh;
+
+}
+
+.home-page::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+
+}
+
+.hero-menu {
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-menu h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.short-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 150px;
+}
+
+.short-description h3 {
+    font-size: 25px;
+    color: #FA812F;
+    font-family: 'sans-serif';
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: -50px;
+}
+
+.short-description h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+
+.short-description p {
+    font-size: 15px;
+    font-family: 'Marcopolo';
+    text-align: center;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    width: 800px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+
+.video-section {
+    position: relative;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    inset: 0;
+    background: url('../images/oliver-guhr-EjHiN2KxTO4-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    z-index: 0;
+}
+
+.video-section .video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(0,0,0,0.6);
+    z-index: 1;
+}
+
+.video-content {
+    position: relative;
+    z-index: 2;
+}
+
+.video-content h3 {
+    font-family: 'Montserrat';
+    color: #FA812F;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: -25px;
+    text-align: center;
+}
+
+.video-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+.play-btn {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    color: black;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.play-btn:hover {
+    background: #FA812F;
+    color: white;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.video-popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    background: rgb(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+.video-popup.active {
+    display: flex;
+    animation: fadeInVideo 2s ease-in;
+}
+
+@keyframes fadeInVideo {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.video-content2 {
+    position: relative;
+    width: 80%;
+    max-width: 850px;
+    aspect-ratio: 16/9;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-popup iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.close-video-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    top: 60px;
+    right: 20px;
+    z-index: 10000;
+}
+
+.close-video-btn:hover {
+    color: #FA812F;
+}
+
+
+.italian-restau {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    z-index: 1;
+    padding: 100px;
+}
+
+.short-descript {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateX(-300px);
+    position: absolute;
+}
+
+.short-descript h2 {
+    font-size: 25px;
+    margin: 5px 0;
+    color: #FA812F;
+    font-family: 'sans-serif';
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.short-descript h1 {
+    font-size: 50px;
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+
+.short-descript p {
+    font-size: 13px;
+    font-family: 'Marcopolo';
+    text-align: center;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    width: 600px;
+    letter-spacing: 1px;
+    color: #666;
+    
+}
+
+.desc-imgs {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    left: 320px;
+    width: 350px;
+    height: 330px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.desc-imgs img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+    transform-origin: center center;
+}
+
+.desc-imgs img:hover {
+    transform: scale(1.3);
+}
+
+.italian-restau2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    z-index: 1;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+.short-descript2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateX(300px);
+    position: absolute;
+}
+
+.short-descript2 h2 {
+    font-size: 25px;
+    margin: 5px 0;
+    color: #FA812F;
+    font-family: 'sans-serif';
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.short-descript2 h1 {
+    font-size: 50px;
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+
+.short-descript2 p {
+    font-size: 13px;
+    font-family: 'Marcopolo';
+    text-align: center;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    width: 600px;
+    letter-spacing: 1px;
+    color: #666;
+    
+}
+
+.desc-imgs2 {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    right: 320px;
+    width: 350px;
+    height: 330px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.desc-imgs2 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+    transform-origin: center center;
+}
+
+.desc-imgs2 img:hover {
+    transform: scale(1.3);
+}
+
+
+.special-signup {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f2f2f2;
+}
+
+.special-signup .row {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.special-signup h3 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #222;
+    white-space: nowrap;
+    font-weight: 600;
+    flex: 0 0 auto;
+    transform: translateY(-9px);
+    font-family: 'Montserrat';
+}
+
+.signup-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 0 0 auto;
+}
+
+.input-group {
+    position: relative;
+    display: inline-block;
+}
+
+.input-group input[type="email"] {
+    padding: 14px 46px 14px 18px;
+    width: 280px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #FA812F;
+    box-shadow: none;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+}
+
+.signup-form button {
+    padding: 12px 34px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.signup-form button:hover {
+    background: #FA812F;
+}
+
+.chef-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 92px;
+    background: #fff;
+}
+
+.chef-heading {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.chef-heading h2 {
+    font-size: 25px;
+    margin: 5px 0;
+    color: #FA812F;
+    font-family: 'sans-serif';
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.chef-heading h1 {
+    font-size: 50px;
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 90px;
+    gap: 20px;
+}
+
+.chef-card {
+    display: block;
+    border: 2px solid #ddd;
+    height: 330px;
+    width: 380px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+}
+
+.chef-profile .chef-img {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #FA812F;
+    top: -65px;
+    object-fit: cover;
+}
+
+
+.chef-info {
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+}
+
+.chef-name {
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.chef-name a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+.chef-name a:hover {
+    color: #FA812F;
+}
+
+.chef-info h3 {
+    color: #FA812F;
+    font-size: smaller;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.short-note {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 300;
+    color: #555;
+    margin: 10px;
+}
+
