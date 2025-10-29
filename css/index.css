@@ -818,7 +818,7 @@
 .video-bg {
     position: absolute;
     inset: 0;
-    background: url('../images/oliver-guhr-EjHiN2KxTO4-unsplash.jpg');
+    background: url('https://res.cloudinary.com/dedz0kba0/image/upload/v1761742980/oliver-guhr-EjHiN2KxTO4-unsplash_dhkvr4.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
