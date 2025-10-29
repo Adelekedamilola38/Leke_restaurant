@@ -3,7 +3,7 @@
 }
 
 .overlay-section {
-    background-image: url('https://res.cloudinary.com/dedz0kba0/image/upload/v1761743056/restaurant-with-green-wall-wooden-table-with-row-tables-planter-with-plant-background_qoyzv6.jpg');
+    background-image: url('https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761743056/restaurant-with-green-wall-wooden-table-with-row-tables-planter-with-plant-background_qoyzv6.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +22,7 @@
 
 .subtitle {
     font-size: 35px;
-    text-decoration: uppercase;
+    text-transform: uppercase;
     letter-spacing: 2px;
     color: #FA812F;
     display: block;
@@ -47,6 +47,8 @@
     min-height: 100vh;
     padding: 80px 20px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .event-bg {
@@ -61,7 +63,7 @@
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+   
 }
 
 .event-bg.active {
@@ -106,22 +108,18 @@
     font-family: 'Montserrat';
 }
 
-
-
 .event-card {
+    width: 100%;
+    height: 400px;
     display: flex;
-    max-width: 1100px;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    left: 100px;
-    margin-top: 20px;
-    opacity: 0;
     transform: translateY(40px);
+    left: 0;
+    top: 0;
+    opacity: 0;
     transition: all 1s ease;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
 }
 
 .event-card.active {
@@ -156,10 +154,13 @@
 
 
 .event-image {
+    flex: 1 1 50px;
+    height: 100%;
+    overflow: hidden;
     position: relative;
-    width: 50%;
 }
 .event-image img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -205,7 +206,7 @@
     margin-bottom: 5px;
     letter-spacing: 2px;
     color: #444;
-    font-family: "Montserat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .event-description {
@@ -215,11 +216,9 @@
 
 .countdown {
     display: flex;
-    margin-bottom: 10px;
-    margin-top: 15px;
+    justify-content: center;
     gap: 48px;
-    position: relative;
-    left: 45px;
+    margin: 15px 0;
 }
 
 .count-item {
@@ -259,19 +258,24 @@
 
 .event-slider {
     position: relative;
-    z-index: 2;
-
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+    height: 400px;
+    flex: 2;
 }
 
 .slider-nav {
     position: absolute;
-    display: flex;
-    justify-content: space-between;
     transition: 0.3s;
     z-index: 1002;
-    width: 90%;
-    left: 60px;
-    top: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 10%;
+    gap: 1050px;
     opacity: 0;
     pointer-events: none;
 }
@@ -321,3 +325,45 @@
 }
 
 
+
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .event-image, .event-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .event-time-label {
+        writing-mode: horizontal-tb;
+        height: auto;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 0.7rem;
+    }
+
+    .event-time-label-position {
+        top: 0;
+        justify-content: center;
+    }
+
+    .countdown {
+        left: 0;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .slider-nav {
+        top: unset;
+        bottom: -40px;
+        left: 0;
+        width: 100%;
+    }
+
+    .bar {
+        top: 0;
+    }
+}
