@@ -10,6 +10,7 @@ function loadComponent(id, file, callback) {
 
 loadComponent("header", "header.html", () => {
   initNavScrollEffect();
+  initBurgerMenu();
 });
 
 loadComponent("footer", "footer.html");
@@ -79,10 +80,6 @@ function initBurgerMenu() {
 
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  setTimeout(initBurgerMenu, 500);
-});
 
 
 function initScrollToTop() {
