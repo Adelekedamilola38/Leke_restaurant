@@ -7,7 +7,7 @@ html, body {
 }
 
 .home-page {
-    background-image: url('https://res.cloudinary.com/dedz0kba0/image/upload/v1761742939/delicious-pizza-indoors_oap1ks.jpg');
+    background-image: url('https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761742939/delicious-pizza-indoors_oap1ks.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -284,18 +284,21 @@ html, body {
 .search-box button {
     border: none;
     background: #333;
-    color: #fff;
     cursor: pointer;
     font-size: 16px;
-    transform: rotate(90deg);
     display: flex;
     position: absolute;
-    right: -4;
-    width: 55px;
-    height: 100%;
+    right: 0;
+    padding: 15px;
     justify-content: center;
     align-items: center;
     transition: background 0.3s ease;
+    overflow: hidden;
+}
+
+.search-box button:hover {
+    background: #FA812F;
+    
 }
 
 .categories {

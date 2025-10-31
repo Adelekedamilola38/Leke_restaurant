@@ -5,9 +5,9 @@ const nextBtnHome = document.getElementById('nextBtnHome');
 const bars = document.querySelectorAll('.bar-home');
 
 const backgroundImages = [
-  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761741501/side-view-penne-pasta-with-tomato-sauce-greens-plate_q56vcw.jpg",
-  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761741555/spaghetti-seafood_tszi8f.jpg",
-  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761741471/pasta-with-chicken-tomato-sauce-grated-cheese_klxscu.jpg"
+  "https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761751489/LS_DIMICHELE_WEDDING_285_jfhj8s.webp",
+  "https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761750401/1-AdejokeBakare-1800x0-c-center_v6g1en.jpg",
+  "https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761749963/44841istockphoto-1414575281-170667a.webp_cyqptp.jpg"
 ];
 
 let indexA = 0;
@@ -211,9 +211,9 @@ const bg2 = document.getElementById('eventBg2');
 let currentBg = 1;
 
 const bgImages = [
-  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761743056/restaurant-with-green-wall-wooden-table-with-row-tables-planter-with-plant-background_qoyzv6.jpg",
-  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761742998/plate-with-bread-fried-egg-avocado_loqhmp.jpg",
-  "https://res.cloudinary.com/dedz0kba0/image/upload/v1761751489/LS_DIMICHELE_WEDDING_285_jfhj8s.webp"
+  "https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761743056/restaurant-with-green-wall-wooden-table-with-row-tables-planter-with-plant-background_qoyzv6.jpg",
+  "https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761742998/plate-with-bread-fried-egg-avocado_loqhmp.jpg",
+  "https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761751489/LS_DIMICHELE_WEDDING_285_jfhj8s.webp"
 ]
 
 let index = Array.from(cards).findIndex(c => c.classList.contains('active'));
