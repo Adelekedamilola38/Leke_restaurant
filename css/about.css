@@ -541,3 +541,41 @@ html, body {
     margin: 10px;
 }
 
+
+
+@media (max-width: 480px) {
+
+    .home-page {
+        height: 60vh;
+    }
+
+    .hero-menu {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-menu h1 {
+        font-size: 2rem;
+    }
+
+    .short-description {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .short-description h3 {
+        font-size: 12px;
+    } 
+
+    .short-description h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .short-description p {
+        font-size: 10px;
+        
+    }
+
+}

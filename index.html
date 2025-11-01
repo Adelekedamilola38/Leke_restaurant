@@ -49,7 +49,7 @@
                 <h2>Inspire by Passion</h2>
                 <h1>Taste the Elegance</h1>
                 <p>Crafted for your delight</p>
-                <button class="menu-btn">LOOK MENU</button>
+                <button class="menu-btn" href="">LOOK MENU</button>
             </div>
     
 
@@ -68,14 +68,16 @@
 
 
     <section class="italian-restau">
-        <div class="short-description">
-            <h2>Italian Restaurant</h2>
-            <h1>WELCOME</h1>
-            <p>It is usually impossible to generalize anything accurate across an entire complex cuisine, <br>which stretches back over two thousand years and incorporates multiple cultures. But <br>in the case of LEKE restaurant Italian cuisine, I think it would be safe to say <br>the true nature is simplicity and freshness.</p>
-            <h3><a href="">OUR STORY</a></h3>
-        </div>
-        <div class="imgs">
-            <img src="https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761751488/202403282941Restaurant11_lg0u0b.jpg" alt="">
+        <div class="description-grid">
+            <div class="short-description">
+                <h2>Italian Restaurant</h2>
+                <h1>WELCOME</h1>
+                <p>It is usually impossible to generalize anything accurate across an entire complex cuisine, which stretches back over two thousand years and incorporates multiple cultures. But in the case of LEKE restaurant Italian cuisine, I think it would be safe to say the true nature is simplicity and freshness.</p>
+                <h3><a href="">OUR STORY →</a></h3>
+            </div>
+            <div class="imgs">
+                <img src="https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761751488/202403282941Restaurant11_lg0u0b.jpg" alt="">
+            </div>
         </div>
     </section>
 
@@ -93,7 +95,7 @@
                 <div class="card-text">
                     <h3>Romantic Restaurant</h3>
                     <p>Phasellus Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptas alias veniam quos quibusdam ipsam odit labore consequatur libero quia saepe, sit quisquam officiis expedita. Facere ab eaque aliquam voluptate!</p>
-                    <a href="#">Learn More</a>
+                    <a href="#">Learn More →</a>
                 </div>
             </div>
             <div class="card">
@@ -103,7 +105,7 @@
                 <div class="card-text">
                     <h3>Delicious Food</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quibusdam tenetur reprehenderit. Rerum quae cumque laudantium doloremque deserunt cupiditate officia, quos et distinctio neque consequuntur similique eos dolor ad porro.</p>
-                    <a href="#">Learn More</a>
+                    <a href="#">Learn More →</a>
                 </div>
             </div>
             <div class="card">
@@ -113,7 +115,7 @@
                 <div class="card-text">
                     <h3>Red Wines You Love</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perspiciatis pariatur eaque aut optio nulla, natus dicta! Expedita, sed illum! Illo placeat nemo iusto sapiente adipisci recusandae soluta quos laudantium.</p>
-                    <a href="#">Learn More</a>
+                    <a href="#">Learn More →</a>
                 </div>
             </div>
 
@@ -298,69 +300,71 @@
     </section>
 
     <section class="reservation-section">
-        <div class="reservation-table">
-            <h3>Reservation</h3>
-            <h1>BOOK TABLE</h1>
+        <div class="reservation-grid">
+            <div class="reservation-table">
+                <h3>Reservation</h3>
+                <h1>BOOK TABLE</h1>
 
-            <div class="reservForm">
-                <form action="https://formsubmit.co/adelekedamilola38@gmail.com" method="POST">
+                <div class="reservForm">
+                    <form action="https://formsubmit.co/adelekedamilola38@gmail.com" method="POST">
 
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
 
-                    <div class="form-group">
-                        <label for="fdate">Date</label>
-                        <input type="date" id="fdate" name="date" class="form-control" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="fdate">Date</label>
+                            <input type="date" id="fdate" name="date" class="form-control" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="fname">Name</label>
-                        <input type="text" name="name" id="fname" placeholder="Name" autocomplete="name" class="form-control" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="fname">Name</label>
+                            <input type="text" name="name" id="fname" placeholder="Name" autocomplete="name" class="form-control" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="ftime">Time</label>
-                        <select name="time" id="ftime" class="form-control" required>
-                            <option value="9:00">9:00</option>
-                            <option value="9:30">9:30</option>
-                            <option value="10:00">10:00</option>
-                            <option value="10:30">10:30</option>
-                            <option value="11:00">11:00</option>
-                            <option value="11:30">11:30</option>
-                            <option value="12:00">12:00</option>
-                        </select>
-                    </div>
+                        <div class="form-group">
+                            <label for="ftime">Time</label>
+                            <select name="time" id="ftime" class="form-control" required>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                            </select>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="fpeople">People</label>
-                        <select name="people" id="fpeople" class="form-control" required>
-                            <option value="1">1 person</option>
-                            <option value="2">2 person</option>
-                            <option value="3">3 person</option>
-                            <option value="4">4 person</option>
-                        </select>
-                    </div>
+                        <div class="form-group">
+                            <label for="fpeople">People</label>
+                            <select name="people" id="fpeople" class="form-control" required>
+                                <option value="1">1 person</option>
+                                <option value="2">2 person</option>
+                                <option value="3">3 person</option>
+                                <option value="4">4 person</option>
+                            </select>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="fphone">Phone</label>
-                        <input type="tel" name="phone" id="fphone" placeholder="Phone" autocomplete="mobile" class="form-control" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="fphone">Phone</label>
+                            <input type="tel" name="phone" id="fphone" placeholder="Phone" autocomplete="mobile" class="form-control" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="fmail">Email</label>
-                        <input type="email" name="email" id="fmail" autocomplete="email" placeholder="Email" class="form-control" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="fmail">Email</label>
+                            <input type="email" name="email" id="fmail" autocomplete="email" placeholder="Email" class="form-control" required>
+                        </div>
 
-                    <button type="submit" class="btn btn-primary">BOOK TABLE</button>
-                    
-                </form>
+                        <button type="submit" class="btn btn-primary">BOOK TABLE</button>
+                        
+                    </form>
+
+                </div>
 
             </div>
 
-        </div>
-
-        <div class="reserv-img">
-            <img src="https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761749361/klara-kulikova-yjQDnOhGE34-unsplash-1_gfedb1.png" alt="reservationTable">
+            <div class="reserv-img">
+                <img src="https://res.cloudinary.com/dedz0kba0/image/upload/f_auto,q_auto/v1761749361/klara-kulikova-yjQDnOhGE34-unsplash-1_gfedb1.png" alt="reservationTable">
+            </div>
         </div>
     </section>
 

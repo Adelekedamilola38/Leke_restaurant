@@ -375,3 +375,93 @@ html, body {
     color: #444;
 }
 
+
+@media (max-width: 480px) {
+
+    .home-page {
+        height: 60vh;
+    }
+
+    .hero-menu {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-menu h1 {
+        font-size: 2rem;
+    }
+
+    .menu-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .menu-title {
+        font-size: 1rem;
+    }
+
+    .item-info {
+        font-size: 5px;
+    }
+
+    .item-name {
+        font-size: 12px;
+    }
+
+    .item-price {
+        font-size: 10px;
+    }
+
+    .item-desc {
+        font-size: 10px;
+    }
+
+    .bg-image {
+        height: 100px;
+        display: flex;
+        background-image: none;
+        background-color: #FA812F;
+    }
+
+    .bg-image h2 {
+        font-size: 20px;
+
+    }
+
+    .bg-image2 {
+        height: 100px;
+        background-image: none;
+        background-color: #FA812F;
+    }
+
+    .bg-image2 h2 {
+        font-size: 15px;
+    }
+
+    .signup-form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-column {
+        display: block;
+    }
+
+    .short-info {
+        font-size: 10px;
+    }
+    .drinks-price {
+        font-size: 12px;
+    }
+
+    .drinks-name {
+        font-size:  13px;
+        letter-spacing: 2px;
+    }
+
+    .drinks-img {
+        width: 100px;
+        height: 70px;
+    }
+}

@@ -214,13 +214,16 @@
 .event-slider-home {
     position: relative;
     z-index: 2;
+    
 }
 .slider-nav-home {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     transition: 0.3s;
     z-index: 1002;
     width: 100%;
+    gap: 720px;
     pointer-events: none;
     opacity: 0;
     position: relative;
@@ -259,7 +262,8 @@
     cursor: pointer;
     transition: 0.3s;
     position: relative;
-    top: 500px;  
+    top: 500px;
+    align-items: center;
 }
 
 .bar-home:hover {
@@ -270,80 +274,75 @@
     transform: scale(1.1);
 }
 
-
 .italian-restau {
     display: flex;
-    position: relative;
+    justify-content: center;
     align-items: center;
-    justify-content: center; 
-    flex-direction: column;
-    height: 100vh;
-    z-index: 1;
+    padding: 200px;
+    margin: 0 auto;
+}
+
+.description-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px;
 }
 
 .short-description {
     display: flex;
     flex-direction: column;
-    position: absolute;
     text-align: center;
-    transform: translateX(-240px);
+    align-items: center;
+    justify-content: center;
 }
 
 .short-description h2 {
-    font-size: 30px;
-    margin: 5px 0;
     color: #FA812F;
-    font-family: 'Playfair Display';
+    font-size: 1rem;
+    letter-spacing: 2px;
 }
 
 .short-description h1 {
-    font-size: 60px;
-    font-family: 'Montserrat';
-    margin: 3px 0;
+    font-size: 3rem;
+    margin: 0 auto;
 }
 
 .short-description p {
-    font-size: 16px;
-    font-family: 'Marcopolo';
-    text-align: center;
-    margin: 2px 0;
-    font-weight: lighter;
+    font-size: 13px;
+    color: #444;
 }
 
-.short-description h3 a {
-    font-size: 15px;
-    font-family: 'Lato' sans-serif;
-    color: #333;
-    font-weight: 100;
-}
-.short-description h3 a:hover {
-    color: red;
+.short-description h3,
+.short-description a {
     text-decoration: none;
+    color: #333;
+    font-size: 12px;
 }
+
+.short-description a:hover {
+    color: #FA812F;
+}
+
 
 .imgs {
-    overflow: hidden;
-    display: flex;
-    position: relative;
-    left: 320px;
-    width: 350px;
-    height: 330px;
-    margin-top: 40px;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    border-radius: 10px; 
 }
 
 .imgs img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    transition: transform 1s ease-in-out;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
     cursor: pointer;
-    transform-origin: center center;
+    transition: transform 1s ease;
+    object-fit: cover;
+    transform-origin: center;
 }
 
 .imgs img:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .container {
@@ -351,10 +350,8 @@
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-    padding: 50px 0;
-    margin-bottom: 50px;
+    
 }
-
 .card {
     width: 356px;
     border-radius: 10px;
@@ -380,14 +377,17 @@
 .card-text {
     text-align: left;
     cursor: pointer;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-text h3 {
     font-size: 24px;
-    margin-bottom: 10px;
     color: #333;
     font-weight: 600;
     letter-spacing: 2px;
+    font-family: 'Montserrat';
 }
 
 .card-text h3:hover {
@@ -396,16 +396,20 @@
 
 .card-text p {
     color: #666;
-    margin-bottom: 15px;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'montserrat';
+    
 }
 
 .card-text a {
-    font-size: 15px;
+    font-size: 12px;
     color: #666;
     font-weight: 600;
     transition: color 0.3s;
     letter-spacing: 1px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .card-text a:hover {
@@ -516,78 +520,86 @@
 }
 
 .reservation-section {
-    display: flex;
-    flex-direction: row;
-    max-height: 100vh;
-    background: #f9f9f9;
+    display: block;
     justify-content: center;
     align-items: center;
-    gap: 200px;
-    padding: 80px 20px;
+    padding: 200px;
+}
+
+.reservation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
 }
 
 .reservation-table {
     display: flex;
     flex-direction: column;
-    font-family: "Montserrat";
     align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 30px;
 }
 
 .reservation-table h3 {
-    font-size: 25px;
-    font-weight: 600;
-    letter-spacing: 2px;
     color: #FA812F;
-    margin-bottom: -20px;
-    font-family: 'Playfair Display';
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    
 }
 
 .reservation-table h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: -20px;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
 }
 
+
 .reservForm {
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    min-height: 300px;
     align-items: center;
-    text-align: justify;
+    justify-content: center;
 }
 
 .reservForm form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;   
+    column-gap: 30px;
+    row-gap: 20px; 
 }
 
 .reservForm label {
-    font-weight: 400;
-    margin-bottom: 6px;
+    font-weight: 300;
+    margin-bottom: 5px;
     font-size: 18px;
-    display: block;
-    color: #333;
+    color: #444;
 }
 
 .reservForm .form-group {
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+
 }
 
 .reservForm .form-control {
-    padding: 12px 25px;
-    border-radius: 10px;
-    border: 2px solid #a5a4a4;
-    font-size: 15px;
+    display: block;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 2px solid #666;
+    font-size: 13px;
     background: #f9f9f9;
     transition: 0.3s ease;
     opacity: 0.7;
+    box-sizing: border-box;
+    outline: none;
 }
 
+.form-group input,
+.form-group select {
+    flex: 1;
+}
 
 .reservForm .form-control:focus {
     border-color: #FA812F;
@@ -595,9 +607,9 @@
     outline: none;
 }
 
-.reservForm button {
+.btn {
     width: 70%;
-    padding: 16px 10px;
+    padding: 15px 12px;
     font-size: 12px;
     font-weight: 300;
     border: none;
@@ -607,35 +619,36 @@
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 2px;
-    align-items: center;
     position: relative;
-    left: 75%;
+    left: 145px;
     margin-top: 10px;
-    
+
 }
 
-.reservForm button:hover {
+.btn:hover {
     background: #FA812F;
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .reserv-img {
-    overflow: hidden;
     display: flex;
-    position: relative;
-    width: 360px;
-    height: 380px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    left: 20px;
+    top: 80px;
 }
 
 .reserv-img img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    transition: transform 1s ease-in-out;
+    width: 360px;
+    height: 340px;
+    transition: transform 1s ease;
     cursor: pointer;
-    transform-origin: center center;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
 }
 
 .reserv-img img:hover {
@@ -649,8 +662,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: #f1f1f1;
 }
-
 
 .customer-review {
     display: flex;
@@ -1098,3 +1111,164 @@
 }
 
 
+@media (max-width: 480px) {
+
+    .home-page {
+        height: 75vh;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero button {
+        font-size: medium;
+        align-items: center;
+
+    }
+
+    .slider-nav-home {
+        display: none;
+
+    }
+
+    .bar-home {
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .description-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        gap: 20px;
+        padding: 60px;
+    }
+
+
+    .card-text h3 {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .card-text p {
+        font-size: 8px;
+    }
+
+    .card-text a {
+        font-size: 9px;
+    }
+
+    .imgs img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .reservation-section {
+        padding: 30px;
+    }
+
+    .reservation-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reservation-table {
+        position: relative;
+        left: 10px;
+    }
+
+    .reservation-table h3 {
+        margin: 0 auto;
+    }
+
+    .reservation-table h1 {
+        letter-spacing: 2px;
+        
+    }
+
+    .reservForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reservForm form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+
+    .reservForm .form-control {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 10px;
+    }
+
+    .reservForm label {
+        font-size: 10px;
+    }
+
+    .btn {
+        position: relative;
+        inset: 0;
+        margin-top: 20px;
+        width: 100%;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #FA812F;
+        transform: scale(1.03);
+    }
+
+    .reserv-img {
+        display: none;
+    }
+
+    .reserv-img img {
+        width: 250px;
+        height: 300px;
+        transition: transform 1s ease;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .review-section {
+        display: none;
+    }
+
+    .video-section {
+        display: none;
+    }
+
+    .blog-section {
+        display: none;
+    }
+
+    .signup-form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    
+}

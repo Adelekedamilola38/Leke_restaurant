@@ -11,6 +11,7 @@ function loadComponent(id, file, callback) {
 loadComponent("header", "header.html", () => {
   initNavScrollEffect();
   initBurgerMenu();
+  initScrollToTop();
 });
 
 loadComponent("footer", "footer.html");

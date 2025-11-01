@@ -332,3 +332,45 @@ html, body {
 .signup-form button:hover {
     background: #FA812F;
 }
+
+
+
+@media (max-width: 480px) {
+
+    .home-page {
+        height: 60vh;
+    }
+
+    .hero-menu {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-menu h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-section {
+        padding: 10px;
+        margin-top: 0 auto;
+    }
+
+    .gallery {
+        padding: 10px;
+    }
+
+    .gallery-item {
+        margin: 5px;
+        
+    }
+
+    .gallery-item img {
+        object-fit: cover;
+    }
+
+    .signup-form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
