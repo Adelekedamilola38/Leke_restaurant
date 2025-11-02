@@ -414,7 +414,7 @@ html, body {
     letter-spacing: 2px;
 }
 
-.column-date {
+.column-date2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -447,6 +447,7 @@ html, body {
     display: flex;
     justify-content: start;
     gap: 10px;
+    padding-top: 50px;
 }
 
 .page-btn {
@@ -469,4 +470,192 @@ html, body {
     background: #333;
     color: #fff;
     border-color: #333;
+}
+
+
+@media (max-width: 480px) {
+
+    .home-page {
+        height: 60vh;
+    }
+
+    .hero-menu {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-menu h1 {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 8px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .title span {
+        margin: 8px;
+        font-size: 12px;
+    }
+
+    .blog-posts {
+        padding: 20px;
+        padding-top: 40px;
+    }
+
+    .post-img img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .post-date {
+        padding: 3px 5px;
+        margin: 0;
+    }
+
+    .post-date .day {
+        font-size: 20px;
+    }
+
+    .post-date .month {
+        font-size: 8px;
+    }
+
+    .text h1 {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .text h5  {
+        font-size: 8px;
+        margin: 0 auto;
+    }
+
+    .text p {
+        font-size: 10px;
+        margin: 0 auto;
+    }
+
+    .text a {
+        font-size: 8px;
+    }
+
+    .post-img2 img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .post-img3 img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .post-img4 img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .post-img5 img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .post-sidebar {
+        padding-left: 10px;
+        padding-top: 40px;
+    }
+
+    .search-box {
+        width: 95px;
+        padding: 5px 9px;
+        margin-bottom: 30px;
+    }
+
+    .search-box input {
+        font-size: 10px;
+    }
+
+    .search-box button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .categories {
+        margin-bottom: 45px;
+        padding-bottom: 25px;
+    }
+
+    .categories h3 {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .categories hr {
+        margin-right: 20px;
+    }
+
+    .categories li {
+        font-size: 8px;
+    }
+
+    .popular h2 {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .column {
+        gap: 10px;
+    }
+
+    .column-info {
+        display: block;
+        
+    }
+
+    .column-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .column-descrp a {
+        font-size: 8px;
+    }
+
+    .column-date {
+        font-size: 7px;
+
+    }
+
+    .archives {
+        padding-top: 45px;
+    }
+
+    .archives h2 {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .date {
+        font-size: 8px;
+    }
+
+    .number {
+        font-size: 7px;
+        padding-left: 20px;
+    }
+
+    .pagination {
+        padding-top: 0;
+    }
+
+    .page-btn {
+       width: 25px;
+       height: 25px;
+       font-size: 10px;
+    }
+
+
+
+    
 }

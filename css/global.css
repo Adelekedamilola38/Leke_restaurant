@@ -1,8 +1,6 @@
 html, body {
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
     overflow-x: hidden;
 }
 
@@ -448,7 +446,7 @@ html, body {
 
 @media (max-width: 768px) {
 
-    html, body {
+    body {
         width: 100%;
         font-size: 14px;
         line-height: 1.5;
@@ -492,10 +490,24 @@ html, body {
         width: 25px;
     }
 
+    .close-btn {
+        font-size: 30px;
+    }
+
     .side-menu {
         width: 80%;
         padding: 20px;
         overflow-y: auto;
+    }
+
+    .side-menu .nav-links-side {
+        padding-top: 30px;
+        gap: 15px;
+
+    }
+
+    .side-menu .nav-links-side a {
+        font-size: 10px;
     }
 
     .scroll-to-top-button {
@@ -513,8 +525,30 @@ html, body {
         padding: 40px 15px 25px;
     }
 
+    .footer-container {
+        padding-left: 10px;
+    }
+
+    .footer h4 {
+        font-size: 12px;
+    }
+
+    .footer p,
+    .footer a,
+    .footer li {
+        font-size: 10px;
+    }
+
     .footer-gallery img {
         height: 70px;
+    }
+
+    .twitter-item small {
+        font-size: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
     }
 
 }

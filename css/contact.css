@@ -1,8 +1,5 @@
-html, body {
-    padding: 0;
-    margin: 0;
+body {
     background: #f1f1f1;
-    font-style: 'Montserrat';
     
 }
 
@@ -126,7 +123,7 @@ html, body {
 .contact-form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 50px;
     grid-template-areas: 
     "name email phone"
     "message message message"
@@ -203,4 +200,64 @@ form button:hover {
 #form-status {
     margin-top: 15px;
     font-weight: 500;
+}
+
+
+@media (max-width: 480px) {
+
+    .home-page {
+        height: 60vh;
+    }
+
+    .hero-menu {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-menu h1 {
+        font-size: 2rem;
+    }
+
+    .contact-map {
+        height: 300px;
+    }
+
+    .map-label h3 {
+        font-size: 12px;
+    }
+
+    .map-label h5 {
+        font-size: 8px;
+    }
+
+    .contact-form {
+        gap: 10px;
+    }
+
+    .contact-form-section h2 {
+        font-size: 20px;
+    }
+
+    .contact-form-section p {
+        font-size: 9px;
+    }
+
+    .form-group label {
+        font-size: 9px;
+    }
+
+    form input {
+        font-size: 10px;
+    }
+
+    form textarea {
+        font-size: 8px;
+    }
+
+    form button {
+        font-size: 8px;
+        padding: 8px 12px;
+    }
+
+    
 }
