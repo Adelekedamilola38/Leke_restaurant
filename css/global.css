@@ -480,8 +480,11 @@ html, body {
     }
 
     .social-icon {
-        display: none;
+        position: relative;
+        top: 5px;
+        left: 50px;
     }
+
 
 
     .burger-menu {
