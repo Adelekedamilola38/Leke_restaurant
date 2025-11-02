@@ -444,7 +444,7 @@ html, body {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 915px) {
 
     body {
         width: 100%;
@@ -498,6 +498,7 @@ html, body {
         width: 80%;
         padding: 20px;
         overflow-y: auto;
+        right: -900px;
     }
 
     .side-menu .nav-links-side {

@@ -376,7 +376,7 @@ html, body {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 915px) {
 
     .home-page {
         height: 60vh;

@@ -175,3 +175,57 @@ html, body {
     color: #fa812f;
 }
 
+
+@media (max-width: 915px) {
+
+    .home-page {
+        height: 60vh;
+    }
+
+    .hero-menu {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-menu h1 {
+        font-size: 2rem;
+    }
+
+    .reservation-table h3 {
+        font-size: 18px;
+    }
+
+    .reservation-table h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .reservForm form {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .reservForm button {
+        width: 100%;
+        left: 0;
+    }
+
+    .reservForm label {
+        font-size: 16px;
+    }
+
+    .reservation-section {
+        padding-top: 50px;
+    }
+
+    .booking-text {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 20px;
+    }
+
+    .text-column p {
+        width: 100%;
+    }
+
+}

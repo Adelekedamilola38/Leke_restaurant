@@ -1111,7 +1111,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 915px) {
 
     .home-page {
         height: 100vh;
@@ -1267,8 +1267,6 @@
     .signup-form {
         display: grid;
         grid-template-columns: 1fr;
-    }
-
-
-    
+    }   
 }
+
