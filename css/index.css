@@ -122,7 +122,7 @@
     transition: background 0.3s ease, transform 0.2s ease;
     outline: none;
     border: none;
-
+    text-decoration: none;
 }
 
 .menu-btn:hover {
