@@ -154,12 +154,10 @@ html, body {
 .side-menu {
     position: fixed;
     top: 0;
-    right: -380px;
     width: 320px;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     z-index: 9999;
-    transition: right 0.9s ease;
     display: flex;
     gap: 24px;
     background: #fff;
@@ -167,6 +165,8 @@ html, body {
     justify-content: flex-start;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: right 0.9s ease;
+    right: -100%;
 }
 
 .side-menu.show {
