@@ -501,6 +501,7 @@ html, body {
         width: 80%;
         padding: 20px;
         overflow-y: auto;
+        right: -100%;
     }
 
     .side-menu .nav-links-side {
